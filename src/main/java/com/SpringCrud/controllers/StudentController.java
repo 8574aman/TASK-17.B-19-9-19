@@ -14,7 +14,7 @@ import com.anuj.entities.Student;
 import com.anuj.services.StudentService;
 
 @Controller
-@ComponentScan(basePackages="com.anuj.contollers")
+@ComponentScan(basePackages="com.SpringCrud.contollers")
 public class StudentController {
 
 	@Autowired
