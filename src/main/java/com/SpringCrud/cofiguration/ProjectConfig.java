@@ -17,7 +17,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages= "com.anuj.configuration")
+@ComponentScan(basePackages= "com.SpringCrud.contollers")
 public class ProjectConfig {
 
 	@Bean
@@ -33,7 +33,7 @@ public class ProjectConfig {
 	public LocalSessionFactoryBean sessionFactory(){
 		LocalSessionFactoryBean sessionFactory=new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(myDataSource());
-		sessionFactory.setPackagesToScan("com.anuj.entities");
+		sessionFactory.setPackagesToScan("com.SpringCrud.entites");
 
 		Properties props=new Properties();
 		props.put("hibernate.dialect", "org.hibernate.dialect.OracleDialect");
