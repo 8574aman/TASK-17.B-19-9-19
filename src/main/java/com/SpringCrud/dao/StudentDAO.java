@@ -2,7 +2,7 @@ package com.SpringCrud.dao;
 
 import java.util.List;
 
-import com.anuj.entities.Student;
+import com.SpringCrud.entities.Student;
 
 public interface StudentDAO {
 	public void addStudent(Student student);
